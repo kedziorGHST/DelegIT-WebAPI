@@ -4,14 +4,16 @@ using DelegIT_webapi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DelegIT_webapi.Migrations
 {
     [DbContext(typeof(DelegITContext))]
-    partial class DelegITContextModelSnapshot : ModelSnapshot
+    [Migration("20190702214044_Initial and models migration")]
+    partial class Initialandmodelsmigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

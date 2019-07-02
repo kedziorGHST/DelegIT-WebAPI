@@ -12,9 +12,13 @@ namespace DelegIT_webapi.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public int employeeId  { get; set; }
+        public int employeeId { get; set; }
+        [ForeignKey("employeeId")]
+        public Employee employee { get; set; }
         [Required]
         public int carId { get; set; }
+        [ForeignKey("carId")]
+        public Car car { get; set; }
         [Required]
         [Column(TypeName = "varchar(40)")]
         public string whence { get; set; }
